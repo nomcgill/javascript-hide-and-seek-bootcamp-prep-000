@@ -11,5 +11,6 @@ function getFirstSelector(selector) {
   }
 }
  function deepestChild() {
-  var grandNode = document.querySelector('#grand-node');
+  var grandie = document.querySelector('#grand-node');
+  
  }
