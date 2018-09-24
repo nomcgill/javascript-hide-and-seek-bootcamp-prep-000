@@ -5,11 +5,17 @@ function getFirstSelector(selector) {
   return document.querySelector('#nested .target');
 }
  function increaseRankBy(n) {
-  var ranks = document.querySelectorAll('ul.ranked-list li');
-  for (var i = 0; i < ranks.length; i++) {
-    ranks[i].innerHTML = parseInt(ranks[i].innerHTML) + n
+  var rank = document.querySelectorAll('ul.ranked-list li');
+  for (var i = 0; i < rank.length; i++) {
+    rank[i].innerHTML = parseInt(rank[i].innerHTML) + n
   }
 }
- function deepestChild() {
+
+function deepestChild() {
   var grandNode = document.querySelector('#grand-node');
- }
+  var firstNode = grandNode.children[0];
+  for (var i = 0; firstNode.children[i]; ) {
+    firstNode = firstNode.children[0]
+  }
+  return firstNode;
+}
