@@ -14,7 +14,7 @@ function getFirstSelector(selector) {
 function deepestChild() {
   var grandNode = document.querySelector('#grand-node');
   var firstNode = grandNode.children[0];
-  for (var i = 0; firstNode.children[i];) {
+  for (var i = 0; firstNode.children[i]; ) {
     firstNode = firstNode.children[0]
   }
   return firstNode;
