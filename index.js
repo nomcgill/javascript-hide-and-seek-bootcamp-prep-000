@@ -12,5 +12,6 @@ function getFirstSelector(selector) {
 }
  function deepestChild() {
   var grandie = document.querySelector('#grand-node');
+  var grandieArray = []
   
  }
