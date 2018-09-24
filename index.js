@@ -13,7 +13,7 @@ function getFirstSelector(selector) {
 
 function deepestChild() {
   var grandNode = document.querySelector('#grand-node');
-  var firstNode = grandNode.children:firstChild;
+  var firstNode = grandNode.children:first-child;
   for (var i = 0; !deepestNode.children[i]; i) {
     deepestNode = deepestNode.children[0]
   }
